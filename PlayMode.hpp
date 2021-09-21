@@ -22,19 +22,19 @@ struct PlayMode : Mode {
 	struct Button {
 		uint8_t downs = 0;
 		uint8_t pressed = 0;
-	} left, right, down, up;
+	} left, right, down, up, rotat1, rotat2, speed, slow, hspeed, hslow;
+
+	float carspeed = 0.0f;
+	float carspeedh = 0.0f;
+	float acceleration = 0.0f;
+	float hacceleration = 0.0f;
 
 	//local copy of the game scene (so code can change it during gameplay):
 	Scene scene;
 
-	//hexapod leg to wobble:
-	Scene::Transform *hip = nullptr;
-	Scene::Transform *upper_leg = nullptr;
-	Scene::Transform *lower_leg = nullptr;
-	glm::quat hip_base_rotation;
-	glm::quat upper_leg_base_rotation;
-	glm::quat lower_leg_base_rotation;
-	float wobble = 0.0f;
+	Scene::Transform *car = nullptr;
+
+	glm::quat car_base_rotation;
 	
 	//camera:
 	Scene::Camera *camera = nullptr;

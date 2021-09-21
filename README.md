@@ -1,8 +1,9 @@
-# (TODO: your game's title)
+# Car in city
 
-Author: (TODO: your name)
+Author: (Ruian Pan)
 
-Design: (TODO: In two sentences or fewer, describe what is new and interesting about your game.)
+Design: 
+The car is moving in the city. However the control is very clunky. Try to move to end of block to win.
 
 Screen Shot:
 
@@ -10,9 +11,10 @@ Screen Shot:
 
 How To Play:
 
-(TODO: describe the controls and (if needed) goals/strategy.)
+press q and e to rotate
+1,2,3,4 for movement acceleration adjustment, goal is to reach bottom right of the city
 
-Sources: (TODO: list a source URL for any assets you did not create yourself. Make sure you have a license for the asset.)
+Sources: provided blender assets
 
 This game was built with [NEST](NEST.md).
 
